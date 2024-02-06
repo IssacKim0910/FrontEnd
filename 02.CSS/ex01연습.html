@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        CSS 코드를 작성하기 위해서는 반드시 head 영역에 style 태그를 선언해야한다.
+            WHY? CSS와 HTML은 다른 언어이기 때문
+        기본문법
+            h1(선택자) {
+                속성 : 속성값;
+            }
+        * 주의점
+            - 반드시 속성값을 입력한 다음에 ;을 찍어줘야 한다.
+            - 선택자 안에 다른 선택자를 작성하지 못한다.
+                p {
+                    h1 {
+                        XX
+                    }
+                }
+     -->
+
+     <!-- 
+        폰트를 설정하는 속성
+        1. 폰트를 변경할 때는 font-family
+        2. 폰트의 크기를 변경할 때는 font-size
+        3. 폰트의 두께를 변경할 때는 font-weight
+        4. 폰트의 모습을 변경할 때는 font-style
+        
+      -->
+    <style>
+        
+        h1 {        
+            font-size: 50px;
+            color: blue;
+        }
+        p {
+            color:aqua;
+            font-family: 궁서체;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>첫번째 h1</h1>
+    <h1>두번째 h1</h1>
+    <p>첫번째 p</p>
+    <p>두번째 p</p>
+
+</body>
+
+</html>
