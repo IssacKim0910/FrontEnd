@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            border = 테두리를 만드는 속성
+            border : 선의 두께, 선의 종류, 선의 색깔
+            border-radius = 테두리를 깎는 속성 (원 만들때 사용)
+            * 주의점
+                - 크기의 절반 이상을 깎아야한다. (%단위 활용하는게 효율)
+                - 영역 자체가 동그랗게 만들어지는건아닙니다. -> box모델의 기본
+        */
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: whitesmoke;
+            border-style: solid;
+            border: 1px solid lightgray;
+            border-radius: 50%;
+        }
+        #div2{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            border-radius: 0;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    
+    <div id="div2"></div>
+</body>
+</html>
