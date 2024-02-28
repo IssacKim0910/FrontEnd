@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let check = confirm('코로나 검사를 하셨나요?');
+        if (check) {
+            let check2 = prompt("양성인가요 음성인가요?");
+            if (check2 === '양성') {
+                document.getElementsByTagName('body')[0].style.backgroundColor = 'red';
+                alert('마스크를 잘쓰고 방역에 주의하세요.');
+            } else if (check2 === '음성') {
+                document.getElementsByTagName('body')[0].style.backgroundColor = 'green';
+                alert('음성입니다. 조심히 가세요!');
+            } else {
+                alert('잘못 입력하셨습니다.');
+            }
+        }   
+        else {
+            alert("검사 하고 오세요.");
+        }
+
+    </script>
+</body>
+
+</html>

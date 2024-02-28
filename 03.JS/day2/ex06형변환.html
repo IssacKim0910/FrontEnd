@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 형변환
+        // (1) 숫자로
+        // a. 정수로 형변환 : parseInt()
+        let textFloat = '3.14';
+        let num1 = parseInt(textFloat);
+        console.log('정수로', num1)
+
+        // b. 실수로 형변환 : parseFloat()
+        let num2 = parseFloat(textFloat);
+        console.log('실수로', num2);
+
+        // c. 숫자로 형변환 : Number
+        let num3 = Number(textFloat);
+        console.log('숫자로', num3);
+
+        // (2) 문자로
+        let number = 56;
+        console.log(String(number));
+        console.log(number.toString(2));
+
+        let no1 = parseInt(prompt("숫자를 입력하세요"));
+        let no2 = parseInt(prompt("숫자를 입력하세요"));
+        alert(no1+"과 "+no2+"에 대한 결과 값은 "+(no1+no2)+", "+(no1-no2)+" 입니다.");
+        
+
+    </script>
+</body>
+</html>

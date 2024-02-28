@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    
+<body>
+    <script>
+        let ranNum = parseInt(Math.random() * 100 + 1);
+        console.log('ranNum', ranNum);
+        while (true) {
+            let userNum = prompt("숫자를 입력해주세요");
+            
+            if (ranNum > userNum) {
+                alert('입력한 값보다 큽니다');
+            }
+            else if (ranNum < userNum) {
+                alert('입력한 값보다 작습니다');
+            }
+            else if (ranNum == userNum) {
+                alert("정답입니다. 축하합니다!😡😡😡😡");
+                break;
+            }
+        }   
+    </script>
+</body>
+
+</html>
