@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="txt">h1태그 컨텐츠</h1>
+    <button onclick="popUp()">직접 작성</button>
+    <button id="btn_han">핸들러용 버튼</button>
+
+    <button id="btn_lis">리스너용 버튼</button>
+    <button id="btn_event">이벤트 객체용 버튼</button>
+
+    <script>
+        // EVENT! 특정 요소에 원하는 이벤트를 부여해보자
+        // ex) click, mouseover, mouseout, change, ....
+
+        // EventHandler vs eventListner
+        // 1. 이벤트 핸들러 : 하나의 요소당 하나의 이벤트만 부여 가능
+        // 2. 이벤트 리스너 : 하나의 요소당 여러개⭐️의 이벤트 부여 가능
+
+        // ** 각각의 버튼들을 클릭 시 , id 가 'txt'인 요소의 컨텐츠 값을 팝업창으로 띄워줄 것
+        const popUp = () => {
+            let h1Tag = document.getElementById("txt");
+            alert(h1Tag.innerText);
+        }
+        const popUp2 = () => {
+            let h1Tag = document.getElementById("txt");
+            alert("popUp2 : " + h1Tag.innerText);
+        }
+        // Case 2) 이벤트 핸들러 
+        let btn1 = document.getElementById("btn_han");
+        btn1.onclick = popUp;
+        btn1.onclick = popUp2;
+
+        
+        // Case 3) 이벤트 리스너
+        let btn2 = document.getElementById("btn_lis");
+        btn2.addEventListener('click', popUp);
+        btn2.addEventListener('click', popUp2);
+    </script>
+</body>
+
+</html>
